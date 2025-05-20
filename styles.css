@@ -2,3 +2,55 @@
   font-family: "Final Fantasy IV";
   src: url(font/final-fantasy-iv.woff2);
 }
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Final Fantasy IV", "Courier New", monospace;
+}
+
+header {
+  background-color: rgb(0, 0, 128);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  padding-top: 24px;
+  font-size: larger;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.text-box {
+  font-family: "Final Fantasy IV", "Courier New", monospace;
+  /* Based on https://codepen.io/Kaizzo/pen/aGWwMM */
+  border: solid 2px #424542;
+  box-shadow: 2px 2px #e7dfe7,
+        -2px -2px #e7dfe7,
+        2px -2px #e7dfe7,
+        -2px 2px #e7dfe7,
+        0 -4px #9c9a9c,
+        -4px 0 #7b757b,
+        0 4px #424542,
+        4px 0 #9c9a9c;
+}
+
+p.text-box {
+  background-color: rgb(0, 0, 96);
+}
+
+.dialog {
+  display: block;
+  width: 450px;
+  padding: 15px 30px;
+}
